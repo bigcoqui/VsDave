@@ -94,6 +94,10 @@
 	<config:android permission="android.permission.INTERNET" />
 
 	<setenv name="next"/>
+	
+  <!-- Gadle Version (Android Thing, do not delete) -->
+  <config:android gradle-version="7.5.1" />
+  <config:android gradle-plugin="7.3.1" />
 
 	<!-- _________________________________ Custom _______________________________ -->
 
