@@ -635,25 +635,23 @@ class Character extends FlxSprite
 
 				playAnim('idle');
 			case 'expunged':
-				// EXPUNGED SHITE ANIMATION LOADING CODE
 				frames = Paths.getSparrowAtlas('expunged/ExpungedFinal', 'shared');
 				animation.addByPrefix('idle', 'Idle', 24, false);
 				animation.addByPrefix('singUP', 'Up', 24, false);
 				animation.addByPrefix('singRIGHT', 'Right', 24, false);
 				animation.addByPrefix('singDOWN', 'Down', 24, false);
 				animation.addByPrefix('singLEFT', 'Left', 24, false);
-		
+
 				loadOffsetFile(curCharacter);
-				
 
 				barColor = FlxColor.fromRGB(82, 15, 15);
 				antialiasing = false;
-				
+
 				globalOffset = [0, -350];
-				
-				setGraphicSize(Std.int((width * 0.8) / furiosityScale));
+
+				setGraphicSize(Std.int((width * 1.6) / furiosityScale));
 				updateHitbox();
-				
+
 				playAnim('idle');
 			case 'bambi-joke':
 				frames = Paths.getSparrowAtlas('joke/bambi-joke', 'shared');
